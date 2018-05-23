@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE VIEW dv_conn_events FOLDER = '/03 - derived views' AS SELECT bv_conn_events.event_date AS event_date, bv_conn_events.source_ip AS source_ip, bv_conn_events.device AS device, bv_conn_events.path AS path, bv_conn_events.http_code AS http_code, bv_conn_events.content_type AS content_type, bv_conn_events.size AS size, 'clever_aggregation' AS new_clever_aggregation FROM bv_conn_events;
+
+ALTER VIEW dv_conn_events
+ LAYOUT (bv_conn_events = [20, 20, 200, 105]);
+
