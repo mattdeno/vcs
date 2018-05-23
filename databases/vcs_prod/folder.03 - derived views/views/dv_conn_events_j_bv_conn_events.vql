@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE VIEW dv_conn_events_j_bv_conn_events FOLDER = '/03 - derived views' AS SELECT dv_conn_events.event_date AS event_date FROM dv_conn_events AS dv_conn_events INNER JOIN bv_conn_events AS bv_conn_events ON dv_conn_events.event_date = bv_conn_events.event_date ;
+
+ALTER VIEW dv_conn_events_j_bv_conn_events
+ LAYOUT (dv_conn_events = [20, 20, 200, 166], bv_conn_events = [590, 258, 200, 166]);
+
