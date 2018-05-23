@@ -1,4 +1,4 @@
-﻿CREATE OR REPLACE REST WEBSERVICE dv_conn_events_j_bv_conn_events
+﻿CREATE OR REPLACE REST WEBSERVICE dv_test
     CONNECTION (
         CHUNKSIZE = 1000
         CHUNKTIMEOUT = 90000
@@ -10,11 +10,17 @@
     DEFAULTREPRESENTATION = HTML
     SUPPORTEDREPRESENTATIONS (HTML, XML, JSON)
     RESOURCES (
-        VIEW dv_conn_events_j_bv_conn_events FIELDS (
-            event_date : 'text'
+        VIEW dv_test FIELDS (
+            event_date : 'text', 
+            source_ip : 'text', 
+            device : 'text', 
+            path : 'text', 
+            http_code : 'text', 
+            content_type : 'text', 
+            size : 'text'
         )
     )
     OPTIONS ( NULLVALUESASEMPTYXMLELEMENTS = false ) 
     OPENAPI2 ( API_VERSION = '1.0.0' ) 
-    FOLDER = '/04 - web interfaces';
+    FOLDER = '/09 - data services';
 
