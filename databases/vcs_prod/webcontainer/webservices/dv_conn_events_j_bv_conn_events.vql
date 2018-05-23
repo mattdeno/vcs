@@ -1,2 +1,5 @@
-﻿UNDEPLOY IF EXISTS WEBSERVICE dv_conn_events_j_bv_conn_events;
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+UNDEPLOY IF EXISTS WEBSERVICE dv_conn_events_j_bv_conn_events;
+
+DEPLOY WEBSERVICE dv_conn_events_j_bv_conn_events LOGIN = '${databases.vcs_prod.webcontainer.webservices.dv_conn_events_j_bv_conn_events.LOGIN}' PASSWORD = '${databases.vcs_prod.webcontainer.webservices.dv_conn_events_j_bv_conn_events.PASSWORD}' ${databases.vcs_prod.webcontainer.webservices.dv_conn_events_j_bv_conn_events.PASSWORD.ENCRYPTED};
 
