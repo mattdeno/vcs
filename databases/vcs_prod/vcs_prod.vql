@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE DATABASE vcs_prod '';
+
+ALTER DATABASE vcs_prod
+  CHARSET DEFAULT;
+
