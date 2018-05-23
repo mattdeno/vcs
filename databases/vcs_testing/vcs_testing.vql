@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE DATABASE vcs_testing 'keep pwd etc off github';
+
+ALTER DATABASE vcs_testing
+  CHARSET DEFAULT;
+
