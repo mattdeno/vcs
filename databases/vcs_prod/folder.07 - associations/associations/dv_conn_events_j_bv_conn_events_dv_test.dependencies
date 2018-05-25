@@ -1,0 +1,9 @@
+﻿/databases/vcs_prod/folder.07 - associations/07 - associations.vql
+/databases/vcs_prod/folder.03 - derived views/03 - derived views.vql
+/databases/vcs_prod/folder.02 - base views/02 - base views.vql
+/databases/vcs_prod/folder.01 - data sources/01 - data sources.vql
+/databases/vcs_prod/folder.01 - data sources/datasources/df/ds_connections.vql
+/databases/vcs_prod/folder.02 - base views/views/bv_conn_events.vql
+/databases/vcs_prod/folder.03 - derived views/views/dv_conn_events.vql
+/databases/vcs_prod/folder.03 - derived views/views/dv_conn_events_j_bv_conn_events.vql
+/databases/vcs_prod/folder.03 - derived views/views/dv_test.vql

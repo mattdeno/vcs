@@ -1,0 +1,5 @@
+﻿# REQUIRES-PROPERTIES-FILE - # Do not remove this comment!
+UNDEPLOY IF EXISTS WEBSERVICE dv_test;
+
+DEPLOY WEBSERVICE dv_test LOGIN = '${databases.vcs_prod.webcontainer.webservices.dv_test.LOGIN}' PASSWORD = '${databases.vcs_prod.webcontainer.webservices.dv_test.PASSWORD}' ${databases.vcs_prod.webcontainer.webservices.dv_test.PASSWORD.ENCRYPTED};
+
