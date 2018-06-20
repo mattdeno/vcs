@@ -1,7 +1,7 @@
 ﻿CREATE OR REPLACE ASSOCIATION dv_conn_events_j_bv_conn_events_dv_test REFERENTIAL CONSTRAINT 
 FOLDER = '/07 - associations'
     ENDPOINT test dv_conn_events_j_bv_conn_events PRINCIPAL (1)
-    ENDPOINT test1 dv_test (1)
+    ENDPOINT test1 dv_test (0,*)
     ADD MAPPING event_date=http_code;
 
 ALTER ASSOCIATION dv_conn_events_j_bv_conn_events_dv_test

@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE VIEW p_dv_test2 FOLDER = '/03 - derived views' AS SELECT dv_test.event_date AS event_date, dv_test.source_ip AS source_ip, dv_test.device AS device, dv_test.path AS path, dv_test.http_code AS http_code, dv_test.content_type AS content_type, dv_test.size AS size FROM dv_test;
+
+ALTER VIEW p_dv_test2
+ LAYOUT (dv_test = [20, 20, 200, 166]);
+

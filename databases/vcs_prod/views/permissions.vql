@@ -1,0 +1,6 @@
+﻿CREATE OR REPLACE MATERIALIZED TABLE permissions (
+        dbname:text, 
+        elementname:text
+    )
+    CONSTRAINT 'dbname' PRIMARY KEY ( 'elementname' );
+

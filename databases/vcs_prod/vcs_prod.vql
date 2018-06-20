@@ -1,15 +1,5 @@
-﻿CREATE OR REPLACE DATABASE vcs_prod ''
-  AUTHENTICATION LDAP denodo_training.ds_denodo_ldap
-    USERBASE = 'CN=Users, DC=denodo, DC=loc'
-    USERATTRIBUTENAME = 'userPrincipalName'
-    USERSEARCH = '(&(objectClass=person))'
-    ROLEBASE = 'OU=groups,DC=denodo,DC=loc'
-    ROLEATTRIBUTENAME = 'cn'
-    ROLESEARCH = '(member=@{{USERDN])';
+﻿CREATE OR REPLACE DATABASE vcs_prod '';
 
 ALTER DATABASE vcs_prod
   CHARSET DEFAULT;
-
-ALTER DATABASE vcs_prod
-  ODBC AUTHENTICATION KERBEROS;
 

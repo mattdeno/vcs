@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE MATERIALIZED TABLE permissions2 (
+        dbname:text (sourcetypeid = '12'), 
+        elementname:text (sourcetypeid = '12')
+    );
+
